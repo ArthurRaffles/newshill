@@ -20,7 +20,7 @@ export const body = css.global`{
 }`;
 
 export const padding = css.global`{
-    h1 {
+    h1, h2 {
         padding: 10px;
     }
 }`;
