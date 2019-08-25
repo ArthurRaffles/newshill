@@ -11,12 +11,6 @@ cats:
   - description: Is actually a bear
     name: LBT
 ---
-![](/static/img/news-hill-barn.jpeg)
-
-floor plan
-
 Welcome to my awesome page about cats of the internet. 
 
 This page is built with NextJS, and content is managed in Netlify CMS
-
-![](/static/img/img_20190825_075245.jpg)
