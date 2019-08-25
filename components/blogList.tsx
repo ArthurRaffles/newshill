@@ -18,13 +18,13 @@ const PostLink = ({name}: PostLinkProps) => (
     </li>
   );
 export const BlogList = (props: BlogListProps) => {
-    let { html , attributes:{ title, cats } } = props.content;
+    let { html , attributes:{ title, posts } } = props.content;
     return (
       <>
           <h1>{title}</h1>
           <div dangerouslySetInnerHTML={{ __html: html }}/>
           <ul>
-              { cats.map((cat, k) => (
+              { posts.map((cat, k) => (
                   <PostLink key={k} name={cat.name} />
               ))}
           </ul>

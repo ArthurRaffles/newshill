@@ -2,11 +2,13 @@ const content: Content = require("./home.md");
 export interface BlogItem {
     description: string;
     name: string;
+    date: string;
+    html: any;
 }
 
 export interface Attributes {
     title: string;
-    cats: BlogItem[];
+    posts: BlogItem[];
 }
 
 export interface Content {
@@ -15,9 +17,10 @@ export interface Content {
 }
 
 export const getPost = (name: string | Array<string>): BlogItem => {
-    let { html , attributes:{ title, cats } } = content;
+    let { html , attributes:{ title, posts } } = content;
     if (Array.isArray(name)) {
         name = name[0];
     }
-    return cats.find(post => post.name === name) || {description: '', name: ''};
+    return posts.find(post => post.name === name) 
+    || {description: '', name: '', html: '', date: ''};
 }
