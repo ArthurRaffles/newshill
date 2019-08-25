@@ -9,7 +9,7 @@ posts:
       * Ground Floor
         ![ground floor](/static/img/plan-ground-floor.jpg "ground floor")
     description: Planning has been granted for most of our changes!
-    name: ' 16 Aug 2019  Planning permitted! '
+    name: '16 Aug 2019  Planning permitted!'
   - date: 2019-08-25T21:24:34.399Z
     body: c
     description: Lil Bub is an American celebrity cat known for her unique appearance.

@@ -13,6 +13,7 @@ console.warn('desc', item);
         <Layout>
             <h1>{router.query.name}</h1>
             <p>{item.description}</p>
+            <div dangerouslySetInnerHTML={{ __html: item.body }}/>
         </Layout>
     </div>
   );

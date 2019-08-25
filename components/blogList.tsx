@@ -25,7 +25,7 @@ export const BlogList = (props: BlogListProps) => {
           <div dangerouslySetInnerHTML={{ __html: html }}/>
           <ul>
               { posts.map((cat, k) => (
-                  <PostLink key={k} name={cat.name} />
+                  <PostLink key={k} name={cat.name}/>
               ))}
           </ul>
           <style jsx>{body}</style>

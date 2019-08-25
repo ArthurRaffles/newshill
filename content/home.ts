@@ -3,7 +3,7 @@ export interface BlogItem {
     description: string;
     name: string;
     date: string;
-    html: any;
+    body: any;
 }
 
 export interface Attributes {
@@ -22,5 +22,5 @@ export const getPost = (name: string | Array<string>): BlogItem => {
         name = name[0];
     }
     return posts.find(post => post.name === name) 
-    || {description: '', name: '', html: '', date: ''};
+    || {description: '', name: '', body: '', date: ''};
 }
