@@ -1,25 +1,47 @@
-// import { NextPage } from 'next';
-
-// const Home: NextPage<{ userAgent: string }> = ({ userAgent }) => (
-//   <h1>Hello world! - user agent: {userAgent}</h1>
-// );
-
-// Home.getInitialProps = async ({ req }) => {
-//   const userAgent = req ? req.headers['user-agent'] || '' : navigator.userAgent;
-//   return { userAgent };
-// };
-
-// export default Home;
 import React, { Component } from 'react'
+import css from 'styled-jsx/css'
 import { BlogItem, Content} from '../content/home';
+import { Layout } from '../components/layout';
+import {body} from '../global-styles';
 const content: Content = require("../content/home.md");
-// import content from '../content/home.md';
+
+const style = css`
+h1,
+a {
+  font-family: 'Arial';
+}
+h2 {
+  color: red;
+}
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+`;
 
 export default class Home extends Component {
   render() {
     let { html , attributes:{ title, cats } } = content;
     return (
-      <article>
+      <div>
+          <style>{`
+            #__next { width: 100% }
+          `}
+          </style>
+      <Layout >
           <h1>{title}</h1>
           <div dangerouslySetInnerHTML={{ __html: html }}/>
           <ul>
@@ -30,7 +52,10 @@ export default class Home extends Component {
                   </li>
               ))}
           </ul>
-      </article>
+          <style jsx>{body}</style>
+          <style jsx>{style}</style>
+      </Layout>
+      </div>
     )
   }
 }

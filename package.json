@@ -13,9 +13,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/styled-jsx": "^2.2.8",
     "next": "^9.0.3",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "styled-jsx": "^3.2.1"
   },
   "devDependencies": {
     "@types/node": "^12.7.2",
