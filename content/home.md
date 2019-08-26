@@ -6,9 +6,9 @@ posts:
     body: |-
 
 
-      ## What are we building?
+      What are we building?
 
-      * Ground Floor
+      Ground Floor
 
       ![](/static/img/plan-ground-floor.jpg)
 
