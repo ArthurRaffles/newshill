@@ -4,6 +4,8 @@ date: 2019-03-17T19:31:20.591Z
 posts:
   - date: 2019-08-25T21:24:11.432Z
     body: |-
+      ![](/static/img/plan-ground-floor.jpg)
+
       ## What are we building?
 
       * Ground Floor
