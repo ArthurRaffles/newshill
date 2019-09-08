@@ -4,12 +4,11 @@ date: 2019-03-17T19:31:20.591Z
 posts:
   - date: 2019-08-25T21:24:11.432Z
     body: |-
-
-
       What are we building?
 
       Ground Floor
 
+      ![](/static/img/news-hill-barn.jpeg)
     description: Planning has been granted for most of our changes!
     name: 16 Aug 2019  Planning permitted!
   - date: 2019-08-25T21:24:34.399Z
