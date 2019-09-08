@@ -10,10 +10,6 @@ posts:
 
       Ground Floor
 
-      ![](/static/img/plan-ground-floor.jpg)
-
-      ## 
-      ![ground floor](/static/img/plan-ground-floor.jpg "ground floor")
     description: Planning has been granted for most of our changes!
     name: 16 Aug 2019  Planning permitted!
   - date: 2019-08-25T21:24:34.399Z
